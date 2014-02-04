@@ -1,4 +1,1 @@
-fop
-===
-
-A PHP application framework
+#Welcome to the FoP
