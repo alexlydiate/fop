@@ -5,10 +5,11 @@ If you liked CodeIgniter, chances are you might get along with the FoP.  I alway
 
 Micro explains the FoP very well at present.  These are its key features:
 
-* MVC
-* HTTP router provides clean URLs as standard
+* Adheres to the MVC pattern
+* HTTP router provides clean URLs as standard, and both dynamic and static routing
 * Easy to use command line interface.
-
+* Lightweight DB layer - wraps PDO, available to all models, offers convenient methods which utilise paramaterised SQL as standard.
+* Easily extensible - drop a properly namespaced library class into app/lib, and fill yer boots
 
 
 
