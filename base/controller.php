@@ -51,7 +51,7 @@ abstract class Controller {
 		echo $now->format("Y-m-d H:i:s" . ' - ' . $type . ' - ' . $message);
 	}
 	
-	protected function redirect($uri = '', $method = 'location', $http_response_code = 302)
+	protected function _redirect($uri = '', $method = 'location', $http_response_code = 302)
 	{
 		$url = 'http://' . $this->_env->getDomain() . '/' . $uri;
 
