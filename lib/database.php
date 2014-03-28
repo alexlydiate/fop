@@ -1,5 +1,5 @@
 <?php
-namespace Sop\Lib;
+namespace Fop\Lib;
 /**
  * This file is part of the Framework of Paradise (FoP).
  * FOP is free software: you can redistribute it and/or modify

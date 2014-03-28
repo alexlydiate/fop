@@ -20,9 +20,9 @@
  * @license http://www.gnu.org/licenses/gpl.html
  */
 
-namespace Sop\App\Controller;
+namespace Fop\App\Controller;
 
-class Welcome extends \Sop\Base\Controller {
+class Welcome extends \Fop\Base\Controller {
 	
 	public function message($name = null) {
 		

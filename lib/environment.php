@@ -20,7 +20,7 @@
  * @license http://www.gnu.org/licenses/gpl.html
  */
 
-namespace Sop\Lib;
+namespace Fop\Lib;
 
 class Environment
 {

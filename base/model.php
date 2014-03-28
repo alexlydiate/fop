@@ -20,10 +20,14 @@
  * @license http://www.gnu.org/licenses/gpl.html
  */
 
-namespace Sop\Base;
+namespace Fop\Base;
 
 abstract class Model {
-
+	
+	/**
+	 * 
+	 * @var \Fop\Lib\Database
+	 */
 	protected $_db;
 	
 	public function __construct(){

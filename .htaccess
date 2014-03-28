@@ -9,8 +9,3 @@ RewriteRule ^(.*)$ index.php?$1 [L,QSA]
 
 RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s(.*)/index\.php [NC]
 RewriteRule ^ %1 [R=301,L]
-
-#AuthType Basic  
-#AuthName "Hey Playtester: Let's Playtest!"  
-#AuthUserFile /home/alex/.htpasswd  
-#require valid-user

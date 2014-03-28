@@ -20,8 +20,8 @@
  * @license http://www.gnu.org/licenses/gpl.html
  */
 
-namespace Sop\App\Model;
+namespace Fop\App\Model;
 
-class Medals extends \Sop\Base\Model {
+class Example extends \Fop\Base\Model {
 	
 }

@@ -25,6 +25,6 @@ require('lib/boot.php');
 
 session_start();
 
-$router = new Sop\Lib\Router();
+$router = new Fop\Lib\Router();
 $router->route();
 ?>

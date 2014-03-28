@@ -20,12 +20,20 @@
  * @license http://www.gnu.org/licenses/gpl.html
  */
 
-namespace Sop\Base;
+namespace Fop\Base;
 
 abstract class Controller {
 	
+	/**
+	 * 
+	 * @var \Fop\Lib\Environment
+	 */
 	protected $_env;
 	
+	/**
+	 * Array of variables to be made available to templates
+	 * @var array
+	 */
 	protected $_templateVars = array();
 	
 	public function __construct() 
@@ -33,11 +41,25 @@ abstract class Controller {
 		$this->_env = \Sop\Lib\Environment::getInstance();
 	}
 	
+	/**
+	 * Loads the given template
+	 * @param string $template
+	 */
 	protected function _view($template) {
 		extract($this->_templateVars);
 		include(ROOTDIR . '/app/views/' . $template . '.php');
 	}
 	
+	/**
+	 * Logs a message, by default to stout
+	 * @todo in fact, only to stout, so others to be added, especially 'file'
+	 * $type is left open for the specific app to define - might decide to be 'message', 'warning', 'error', for example
+	 * @todo This could be enforced in a config, perhaps...
+	 * @param string $message
+	 * @param string $type
+	 * @param string $stout
+	 * @param string $target
+	 */
 	protected function _log($message, $type, $stout = true, $target = null) {
 		$now = new \DateTime();
 		
@@ -48,9 +70,15 @@ abstract class Controller {
 			break;
 		}
 		
-		echo $now->format("Y-m-d H:i:s" . ' - ' . $type . ' - ' . $message);
+		echo $now->format("Y-m-d H:i:s") . ' - ' . $type . ' - ' . $message . "\n";
 	}
 	
+	/**
+	 * Redirect!
+	 * @param string $uri
+	 * @param string $method
+	 * @param number $http_response_code
+	 */
 	protected function _redirect($uri = '', $method = 'location', $http_response_code = 302)
 	{
 		$url = 'http://' . $this->_env->getDomain() . '/' . $uri;

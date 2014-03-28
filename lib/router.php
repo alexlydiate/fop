@@ -20,20 +20,31 @@
  * @license http://www.gnu.org/licenses/gpl.html
  */
 
-namespace Sop\Lib;
+namespace Fop\Lib;
 
 class Router {
-	
+	/**
+	 * 
+	 * @var \Fop\Lib\Environment
+	 */
 	private $_env;
 	
+	/**
+	 * 
+	 * @var array
+	 */
 	private $_route = array();
 	
+	/**
+	 * 
+	 * @var array
+	 */
 	private $_args = array();
 	
 	protected $_staticRoutes;
 	
 	public function __construct() {
-		$this->_env = \Sop\Lib\Environment::getInstance();
+		$this->_env = \Fop\Lib\Environment::getInstance();
 		
 		$this->_staticRoutes = include ROOTDIR . '/app/config/routes.php';
 
