@@ -3,7 +3,7 @@ The Framework of Paradise is a PHP MVC micro framework.
 
 If you liked CodeIgniter, chances are you might get along with the FoP.  I always liked the way CI way was so light and swift, and the intuitive nature of its routing.  At the same time, I wanted to be able to utilise modern PHP joys, in particular namespacing, and also have the framework step out of the way where OOP is concerned, now that PHP does OOP pretty much as well as anything else.  I was also keen to lighten the DB layer, use PDO, and have complete control of it.
 
-Micro explains the FoP very well at present.  I use it for my HashtagFutures sites - http://hashtagfutures.co.uk et al - and exclusively for any CLI PHP applications.  These are its key features:
+Micro explains the FoP very well at present.  I designed it for my HashtagFutures sites - http://hashtagfutures.co.uk et al - and I use exclusively for any CLI PHP applications.  Key features include:
 
 * Adheres to the MVC pattern
 * HTTP router provides clean URLs as standard, and both dynamic and static routing
